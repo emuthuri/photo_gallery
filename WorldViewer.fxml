@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="542.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WorldController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="394.0" fitWidth="522.0" layoutX="171.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <Pane layoutX="71.0" layoutY="238.0" prefHeight="30.0" prefWidth="200.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+         <children>
+            <Button fx:id="left" layoutX="14.0" layoutY="5.0" mnemonicParsing="false" onAction="#leftView" text="Turn Left" />
+            <Button fx:id="right" layoutX="447.0" layoutY="5.0" mnemonicParsing="false" onAction="#rightView" text="Turn Right" />
+            <Button fx:id="goForward" layoutX="244.0" layoutY="5.0" mnemonicParsing="false" onAction="#goForward" text="Go Forward" />
+         </children>
+      </Pane>
+      <ImageView fx:id="firstItem" fitHeight="65.0" fitWidth="65.0" layoutX="467.0" layoutY="42.599999999999596" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="362.40000000000043" AnchorPane.leftAnchor="467.0" AnchorPane.rightAnchor="10.0" />
+      <MenuBar prefHeight="26.0" prefWidth="542.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu fx:id="pickUp" mnemonicParsing="false" text="Pick Up">
+               <items>
+                  <MenuItem fx:id="pickUpBino" mnemonicParsing="false" onAction="#pickUp" text="Binoculars" />
+                  <MenuItem fx:id="pickUpHat" mnemonicParsing="false" onAction="#pickUp2" text="Hat" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" text="PutDown">
+            <items>
+              <MenuItem fx:id="putDownBino" mnemonicParsing="false" onAction="#putDown" text="Binoculars" />
+                  <MenuItem fx:id="putDownHat" mnemonicParsing="false" onAction="#putDown2" text="Hat" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fx:id="secondItem" fitHeight="64.0" fitWidth="64.0" layoutX="24.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="24.0" />
+   </children>
+</AnchorPane>
